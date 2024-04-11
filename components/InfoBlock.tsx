@@ -5,8 +5,8 @@ export default function InfoBlock({title, subtitle, link_title, link_url, date, 
                 <h2 className="text-base md:text-lg font-bold">{title}</h2>
                 <p className="shrink-0 text-sm">{date}</p>
             </div>
-            <p className="font-semibold text-gray-500 dark:text-gray-300 text-sm">{subtitle}</p>
-            <a className="underline decoration-solid hover:text-gray-500 dark:hover:text-gray-300 text-xs md:text-sm" href={link_url}>
+            <p className="font-semibold text-gray-500 dark:text-gray-300 text-sm font-mono">{subtitle}</p>
+            <a className="underline decoration-solid hover:text-gray-500 dark:hover:text-gray-300 text-xs md:text-sm font-mono" href={link_url}>
                 {link_title}
             </a>
 
@@ -14,12 +14,12 @@ export default function InfoBlock({title, subtitle, link_title, link_url, date, 
                 Array.isArray(content) ? (
                     content.map(
                         (paragraph, index) => (
-                            <li className="text-xs" key={index}>{paragraph}</li>
+                            <li className="text-xs font-mono" key={index}>{paragraph}</li>
                         )
                     )
                 ) 
                 : (
-                    <p className="text-xs">{content}</p>
+                    <p className="text-xs font-mono">{content}</p>
                 )
             }
 
