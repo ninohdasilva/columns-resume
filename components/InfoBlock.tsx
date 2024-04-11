@@ -5,8 +5,8 @@ export default function InfoBlock({title, subtitle, link_title, link_url, date, 
                 <h2 className="text-base md:text-lg font-bold">{title}</h2>
                 <p className="shrink-0 text-sm">{date}</p>
             </div>
-            <p className="font-semibold text-gray-600 dark:text-gray-300 text-sm">{subtitle}</p>
-            <a className="underline decoration-dotted hover:decoration-solid text-xs md:text-sm" href={link_url}>
+            <p className="font-semibold text-gray-500 dark:text-gray-300 text-sm">{subtitle}</p>
+            <a className="underline decoration-solid hover:text-gray-500 dark:hover:text-gray-300 text-xs md:text-sm" href={link_url}>
                 {link_title}
             </a>
 
