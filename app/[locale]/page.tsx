@@ -1,4 +1,5 @@
 import { ActionsContainer } from "@/components/ActionContainer";
+import Projects from "@/components/Projects";
 import Resume from "@/components/Resume";
 import { TailwindIndicator } from "@/components/TailwindIndicator";
 import Image from "next/image";
@@ -9,6 +10,7 @@ export default function Home() {
       <ActionsContainer />
       <TailwindIndicator />
       <Resume />
+      <Projects />
     </main>
   );
 }

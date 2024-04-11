@@ -5,7 +5,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 40 60% 80%; /* tester beige clair pour vérifier les marges à l'impression */
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -58,4 +58,42 @@
   body {
     @apply bg-background text-foreground;
   }
+  .subbody {
+    @apply bg-background text-foreground;
+  }
+}
+
+
+* {
+  -webkit-print-color-adjust: exact !important;   /* Chrome, Safari 6 – 15.3, Edge */
+  color-adjust: exact !important;                 /* Firefox 48 – 96 */
+  print-color-adjust: exact !important;           /* Firefox 97+, Safari 15.4+ */
+}
+
+@media print{
+
+  @page {
+    margin: 0;
+    size: portrait;
+  }
+  
+  .print-force-new-page {
+    padding-top: 2cm;
+  }
+
+  .no-print, .no-print *
+  {
+      display: none !important;
+  }
+
+  .subbody{
+    padding: 0;
+    margin: 0;
+    height: 200vh;
+  }
+
+}
+
+.print-force-new-page {
+  page-break-before: always;
 }

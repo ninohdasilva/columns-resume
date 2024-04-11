@@ -29,7 +29,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <div className="subbody">
+            {children}
+          </div>
+          
         </ThemeProvider>
         </body>
     </html>
