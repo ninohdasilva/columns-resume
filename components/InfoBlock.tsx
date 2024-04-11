@@ -1,4 +1,4 @@
-export default function InfoBlock({title, subtitle, link_title, link_url, date, content}:{title ?: string, subtitle ?: string, link_url ?: string, link_title ?: string, date ?: string, content ?: string}) {
+export default function InfoBlock({title, subtitle, link_title, link_url, date, content}:{title ?: string, subtitle ?: string, link_url ?: string, link_title ?: string, date ?: string, content ?: string | string[]}) {
     return (
         <div className="info-block">
             <div className="info-block-title flex justify-between">
@@ -9,7 +9,20 @@ export default function InfoBlock({title, subtitle, link_title, link_url, date, 
             <a className="underline decoration-dotted hover:decoration-solid" href={link_url}>
                 {link_title}
             </a>
-            <p>{content}</p>
+
+            {   
+                Array.isArray(content) ? (
+                    content.map(
+                        (paragraph, index) => (
+                            <li key={index}>{paragraph}</li>
+                        )
+                    )
+                ) 
+                : (
+                    <p>{content}</p>
+                )
+            }
+
         </div>
     )
 }
