@@ -2,11 +2,11 @@ export default function InfoBlock({title, subtitle, link_title, link_url, date, 
     return (
         <div className="info-block">
             <div className="info-block-title flex justify-between">
-                <h2 className="text-1xl font-bold">{title}</h2>
-                <p className="shrink-0">{date}</p>
+                <h2 className="text-base md:text-lg font-bold">{title}</h2>
+                <p className="shrink-0 text-sm">{date}</p>
             </div>
-            <p className="font-semibold">{subtitle}</p>
-            <a className="underline decoration-dotted hover:decoration-solid" href={link_url}>
+            <p className="font-semibold text-gray-600 dark:text-gray-300 text-sm">{subtitle}</p>
+            <a className="underline decoration-dotted hover:decoration-solid text-xs md:text-sm" href={link_url}>
                 {link_title}
             </a>
 
@@ -14,12 +14,12 @@ export default function InfoBlock({title, subtitle, link_title, link_url, date, 
                 Array.isArray(content) ? (
                     content.map(
                         (paragraph, index) => (
-                            <li key={index}>{paragraph}</li>
+                            <li className="text-xs" key={index}>{paragraph}</li>
                         )
                     )
                 ) 
                 : (
-                    <p>{content}</p>
+                    <p className="text-xs">{content}</p>
                 )
             }
 

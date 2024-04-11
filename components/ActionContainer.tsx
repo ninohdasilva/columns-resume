@@ -4,7 +4,7 @@ import { PrintButton } from "@/components/PrintButton"
 
 export function ActionsContainer() {
   return (
-    <div className="container fixed flex h-16 items-center no-print">
+    <div className="fixed flex flex-col lg:flex-row top-0 no-print pt-12 pl-1">
         <ThemeToggle></ThemeToggle>
         <LanguageToggle></LanguageToggle>
         <PrintButton></PrintButton>
