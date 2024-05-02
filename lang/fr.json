@@ -1,7 +1,138 @@
 { 
     "Data": 
     { 
-        "resume": "CV",
-        "title": "titre"
+
+        "title": "Chien \"Full-Stack\"",
+        "name" : "Jack Waf-Waf",
+
+        "experiences" : "Expériences professionnelles",
+        "education" : "Formation",
+        "skills" : "Compétences",
+        "langugages" : "Langues",
+        "hobbies" : "Divers",
+        "projects" : "Projets",
+        "see_more_projects" : "Voir tous les projets",
+
+        "contact1_description" : "",
+        "contact1_title" : "waf@waf.waf",
+        "contact1_url" : "mailto:waf@waf.waf",
+
+        "contact2_description" : "LinkedIn :",
+        "contact2_title" : "jack-waf-waf",
+        "contact2_url" : "https://www.linkedin.com/in/",
+
+        "contact3_description" : "GitHub :",
+        "contact3_title" : "jack-waf-waf",
+        "contact3_url" : "https://github.com/",
+
+        "job1_title" : "Guide Canin pour Aveugles",
+        "job1_subtitle" : "Centre de Formation Canine Étoile Guidante",
+        "job1_date" : "Depuis 2024",
+        "job1_link_url" : "",
+        "job1_link_title" : "",
+        "job1_content1" : "Responsable de guider en toute sécurité les personnes aveugles dans leur vie quotidienne.",
+        "job1_content2" : "Développement d'une relation de confiance et de dévouement avec le partenaire humain.    ",
+        "job1_content3" : "Formation continue pour maintenir les compétences en navigation et en obéissance.",
+        "job1_content4" : "Collaboration avec des équipes de recherche et de sauvetage lors de catastrophes naturelles ou accidents.",
+        "job1_technologies" : "Obéissance, Fidélité, Collaboration, Empathie",
+
+        "job2_title" : "Chien de Détection",
+        "job2_subtitle" : "Unité Canine Narines Aiguisées",
+        "job2_date" : "2022 - 2024",
+        "job2_content1" : "Expert en détection de substances illicites dans divers environnements.",
+        "job2_list_link_description" : "Participation aux camapgnes de sensibilisation publiques : ",
+        "job2_list_link_url" : "https://example.com",
+        "job2_list_link_title" : "Les Narines Aiguisées",
+
+        "job3_subtitle" : "Département Sentinelles de la Ville",
+        "job3_list_link_description" : "Formation : ",
+        "job3_list_link_url" : "https://example.com",
+        "job3_list_link_title" : "Techniques de défense",
+        "job3_content1" : "Participation à des missions de recherche et de sauvetage.",
+        "job3_technologies" : "Sécurité, Détection, Protection, Réactivité",
+
+        "job4_title" : "Berger Canin",
+        "job4_subtitle" : "Ferme Vallée des Bergers",
+        "job4_date" : "2020 - 2022",
+        "job4_list_link_description" : "Disctinctions : ",
+        "job4_list_link_url" : "https://example.com",
+        "job4_list_link_title" : "Lettre de recommandation",
+        "job4_content1" : "Responsable de la surveillance et de la gestion du bétail sur de vastes étendues.",
+        "job4_technologies" : "Surveillance, Protection du troupeau, Adaptation aux conditions météorologiques",
+
+        "education1_title" : "Institut de Recherche Canine",
+        "education1_date" : "2020 - 2023",
+        "education1_subtitle" : "Doctorat en Comportement Animal et Ethologie",
+        "education1_technologies" : "Thèse, Publication, Ethnologie",
+
+        "education2_title" : "Université Canine Internationale",
+        "education2_date" : "2016 - 2018",
+        "education2_subtitle" : "Master en Psychologie Canine",
+
+        
+        "education3_title" : "Université Canine Internationale",
+        "education3_date" : "2014 - 2017",
+        "education3_subtitle" : "Licence en Sciences Canines Appliquées",
+
+
+        "education4_title" : "École de Dressage Canis Excellencia",
+        "education4_date" : "2013 - 2014",
+        "education4_content1" : "Baccalauréat en Dressage Canin",
+        "education4_technologies" : "Mention Très Bien",
+
+        
+
+
+        "skills1_subtitle" : "Dressage avancé",
+        "skills1_content1" : "Obéissance avancée, Commandes complexes",
+
+        "skills2_subtitle" : "Détection olfactive",
+        "skills2_content1" : "Olfaction, Reconnaissance d'odeurs",
+
+        "skills3_subtitle" : "Patrouille et sécurité",
+        "skills3_content1" : "Vigilance, Surveillance, Dissuasion, Sécurité publique, Patrouille urbaine",
+
+        "skills4_subtitle" : "Gestion du stress",
+        "skills4_content1" : "Résilience, Gestion émotionnelle, Techniques de relaxation, Adaptation au stress",
+        
+        "skills5_subtitle" : "Langues",
+        "skills5_content1" : "Aboiements",
+        "skills5_content2" : "Langage corporel",
+      
+        "hobbies1_title" : "Activités sportives",
+
+        "hobbies2_subtitle" : "Jeux de reception",
+        "hobbies2_content" : "Frisbees, Balles",
+
+        "hobbies3_subtitle" : "Compétitions canines",
+        "hobbies3_content" : "(depuis 2012)",
+        
+        "hobbies4_content1" : "Courses de vitesse",
+        "hobbies4_content2" : "Courses d'obstacles",
+        "hobbies4_content3" : "Obéissance Canine",
+
+        "hobbies5_subtitle" : "Courir dans les parcs",
+        "hobbies5_content" : "Parcours & Exploration",
+        
+        "project1_title" : "Programme de socialisation Canin-Félin",
+        "project1_link_url" : "https://example.com",
+        "project1_link_title" : "Voir plus",
+        "project1_content1" : "Création d'un programme de socialisation entre chiens et chats.",
+        "project1_technologies" : "Éducation réciproque, Intégration",
+
+        "project2_title" : "Sytème de surveillance sous-marine",
+        "project2_link_url" : "https://example.com",
+        "project2_link_title" : "Voir plus",
+        "project2_content1" : "Élaboration d'un système de surveillance sous-marine utilisant la détection olfactive.",
+        "project2_technologies" : "Olfactive aquatique, Ecosystèmes",
+
+        "project3_title" : "Etude sur la migration des oiseaux",
+        "project3_link_url" : "https://example.com",
+        "project3_link_title" : "Voir plus",
+        "project3_content1" : "Participation à des études sur la migration des oiseaux en tant que guide pour les chercheurs.",
+        "project3_technologies" : "Observation ornithologique",
+
+        "resume": "CV"
+
     }
 }

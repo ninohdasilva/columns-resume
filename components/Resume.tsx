@@ -10,22 +10,39 @@ import ResumeTitle from "./sections/resume-right-column/ResumeTitle";
 
 export default function Resume() {
     return (
-        <section className="resume mx-auto w-full max-w-2xl">
-            <section className="resume-columns flex flex-row">
-                <section className="resume-left-column w-1/3 flex flex-col p-4 gap-4">
+        <section className="resume mx-auto max-w-2xl">
+
+            <section className="resume-columns md:hidden">
+
+                <section className="resume-one-column flex flex-col p-4 gap-4">
+                    <Photo />
+                    <ResumeTitle />
+                    <Contact />
+                    <Experience />
+                    <Education />
+                    <Skills />
+                    <Hobbies />
+                </section>
+
+            </section>
+
+            <section className="resume-columns hidden md:flex sm:flex-row">
+                
+                <section className="resume-left-column md:w-1/3 flex flex-col p-4 gap-4">
                     <Photo />
                     <Contact />
                     <Skills />
-                    <Languages />
                     <Hobbies />
                 </section>
-                <section className="resume-left-column w-2/3 flex flex-col p-4 gap-4">
+
+                <section className="resume-right-column md:w-2/3 flex flex-col p-4 gap-4">
                     <ResumeTitle />
-                    <About />
                     <Experience />
                     <Education />
                 </section>
+    
             </section>
+
         </section>
     )
     

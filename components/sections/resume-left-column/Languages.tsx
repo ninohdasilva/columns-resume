@@ -1,5 +1,5 @@
-import InfoBlock from "@/components/InfoBlock";
-import InfoBlockContainerTitle from "@/components/InfoBlockContainerTitle";
+import InfoBlock from "@/components/blocks/InfoBlock";
+import InfoBlockContainerTitle from "@/components/blocks/InfoBlockContainerTitle";
 
 export default function Languages() {
     return (

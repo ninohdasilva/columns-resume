@@ -3,14 +3,19 @@ import Projects from "@/components/Projects";
 import Resume from "@/components/Resume";
 import { TailwindIndicator } from "@/components/TailwindIndicator";
 import Image from "next/image";
+import { useTranslations } from "next-intl"
 
 export default function Home() {
+
+  const t = useTranslations('Data');
+
   return (
-    // <main className="container relative mx-auto bg-background scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
     <main className="p-8">
+      <ActionsContainer />
       <TailwindIndicator />
       <Resume />
       <Projects />
+
     </main>
   );
 }

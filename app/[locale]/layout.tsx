@@ -24,19 +24,12 @@ export default function RootLayout({
   return (
     <html lang={locale}>
       <body className={inter.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-        <ActionsContainer />
-          <div className="subbody">
-            {children}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <div className="subbody"> 
+            {children} 
           </div>
-          
         </ThemeProvider>
-        </body>
+      </body>
     </html>
   );
 }

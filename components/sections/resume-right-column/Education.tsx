@@ -1,13 +1,18 @@
-import InfoBlock from "@/components/InfoBlock";
-import InfoBlockContainerTitle from "@/components/InfoBlockContainerTitle";
+import InfoBlock from "@/components/blocks/InfoBlock";
+import InfoBlockContainerTitle from "@/components/blocks/InfoBlockContainerTitle";
+import { useTranslations } from "next-intl"
 
 export default function Education() {
+
+    const t = useTranslations('Data');
+
     return (
-        <section className="education rounded-xl ring-1 ring-foreground p-2">
-            <InfoBlockContainerTitle title={"Education"} />
-            <InfoBlock title="edu 1" subtitle= "subt edu 1" date="2020-2021" content={["content edu 1"]}/>
-            <InfoBlock title="edu 2" subtitle= "subt edu 2" date="2019-2020" content={["content edu 2"]}/>
-            <InfoBlock title="edu 3" subtitle= "subt edu 2" date="2016-2019" content={["content edu 3"]}/>
+        <section className="education rounded-xl ring-1 ring-foreground p-2 space-y-3">
+            <InfoBlockContainerTitle title={t("education")} />
+            <InfoBlock title={t("education1_title")} date={t("education1_date")} subtitle={t("education1_subtitle")}  technologies={t("education1_technologies")}/>
+            <InfoBlock title={t("education2_title")} date={t("education2_date")} subtitle={t("education2_subtitle")} />
+            <InfoBlock title={t("education3_title")} date={t("education3_date")} subtitle={t("education3_subtitle")}/>
+            <InfoBlock title={t("education4_title")} date={t("education4_date")} subtitle={t("education4_content1")}  technologies={t("education4_technologies")}/>
         </section>
     )
 }
